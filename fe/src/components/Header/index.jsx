@@ -1,13 +1,11 @@
-import { PropTypes } from 'prop-types';
+import { Container, Content } from './styles';
 
-// import { Container, Content } from './styles';
-
-export default function Header({ title }) {
+export default function Header() {
   return (
-    <Header title={title} />
+    <Container>
+      <Content>
+        <h1>Drag and Drop</h1>
+      </Content>
+    </Container>
   );
 }
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};

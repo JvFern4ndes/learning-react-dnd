@@ -1,7 +1,20 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function List() {
+import React from 'react';
+import Container, { Header } from './styles';
+
+export default function List(props) {
+  const { title } = props;
+
   return (
-    <h1>List</h1>
+    <Container>
+      <Header>
+        {title}
+      </Header>
+    </Container>
   );
 }
+
+List.propTypes = {
+  title: PropTypes.string.isRequired,
+};
