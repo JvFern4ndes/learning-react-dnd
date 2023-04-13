@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   background: #4285f4;
-  margin: 0 32px 32px 0;
-  padding: 16px;
+  margin: 32px 16px;
+  padding: 32px;
   height: max-content;
-  display: flex;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   border-radius: 16px;
   box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.15);
@@ -15,7 +16,7 @@ const Container = styled.div`
 
 export const Header = styled.div`
   background: white;
-  margin: 16px;
+  margin: 0 0 64px;
   padding: 16px;
   height: max-content;
   display: flex;
