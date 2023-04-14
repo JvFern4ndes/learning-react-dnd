@@ -12,7 +12,11 @@ export default function List(props) {
       <Header>
         {title}
       </Header>
-      <Card />
+      <Card
+        task="Varrer a casa"
+        date="14/04/2023"
+        time="9:30"
+      />
     </Container>
   );
 }
