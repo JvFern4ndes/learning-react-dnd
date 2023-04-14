@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+export const Container = styled.div`
   background: #4285f4;
   margin: 32px 16px;
   padding: 32px;
@@ -28,5 +28,3 @@ export const Header = styled.div`
   font-weight: 800;
   color: #4285f4;
 `;
-
-export default Container;

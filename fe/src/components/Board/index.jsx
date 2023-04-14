@@ -1,12 +1,14 @@
 import List from '../List';
 import { Container } from './styles';
 
+import api from '../../mocks/api.json';
+
 export default function Board() {
   return (
     <Container>
-      <List title="Tarefas à serem cumpridas" />
-      <List title="Em andamento" />
-      <List title="Tarefas cumpridas" />
+      {api.lists.map((list) => (
+        <List title={list.title} tasks={list.tasks} />
+      ))}
     </Container>
   );
 }

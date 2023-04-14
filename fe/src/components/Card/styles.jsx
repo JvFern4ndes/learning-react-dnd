@@ -10,6 +10,10 @@ const Container = styled.div`
   border-radius: 16px;
   box-sizing: border-box;
   overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 `;
 
 export const Label = styled.div`

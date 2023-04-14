@@ -1,0 +1,59 @@
+{
+  "lists": [
+    {
+      "title": "Tarefas à serem cumpridas",
+      "tasks": [
+        {
+          "task": "Lavar a louça",
+          "date": "14/04/2023",
+          "time": "17:00"
+        },
+        {
+          "task": "Colocar o lixo para fora",
+          "date": "14/04/2023",
+          "time": "17:40"
+        }
+      ]
+    },
+    {
+      "title": "Em andamento",
+      "tasks": [
+        {
+          "task": "Cuidar das plantas",
+          "date": "14/04/2023",
+          "time": "6:35"
+        }
+      ]
+    },
+    {
+      "title": "Tarefas cumpridas",
+      "tasks": [
+        {
+          "task": "Arrumar a cama",
+          "date": "14/04/2023",
+          "time": "6:00"
+        },
+        {
+          "task": "Fazer um café",
+          "date": "14/04/2023",
+          "time": "6:10"
+        },
+        {
+          "task": "Tirar o pó da mesa",
+          "date": "14/04/2023",
+          "time": "6:15"
+        },
+        {
+          "task": "Varrer o chão",
+          "date": "14/04/2023",
+          "time": "6:20"
+        },
+        {
+          "task": "Colocar roupas para lavar",
+          "date": "14/04/2023",
+          "time": "6:30"
+        }
+      ]
+    }
+  ]
+}
