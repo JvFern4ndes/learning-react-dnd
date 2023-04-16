@@ -25,5 +25,9 @@ export default function List(props) {
 
 List.propTypes = {
   title: PropTypes.string.isRequired,
-  tasks: PropTypes.shape.isRequired,
+  tasks: PropTypes.arrayOf(PropTypes.shape({
+    task: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+  })).isRequired,
 };
