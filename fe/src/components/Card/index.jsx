@@ -1,12 +1,24 @@
 import PropTypes from 'prop-types';
 
-import Container, { Content, ContentContainer, Label } from './styles';
+import { useDrag } from 'react-dnd';
+import {
+  Container, Content, ContentContainer, Label,
+} from './styles';
+import itemTypes from '../../../utils/itemTypes';
 
 export default function Card(props) {
   const { task, date, time } = props;
+  const [{ isDragging }, drag] = useDrag({
+    item: {
+      type: itemTypes.CARD,
+    },
+    collect: (monitor) => ({
+      isDragging: !!monitor.isDragging(),
+    }),
+  });
 
   return (
-    <Container>
+    <Container ref={drag}>
       <Label />
       <ContentContainer>
         <Content>

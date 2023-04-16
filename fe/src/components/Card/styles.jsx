@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+export const Container = styled.div`
   background: ${({ theme }) => theme.backgroundColor};
   width: 100%;
   padding: 0 0 16px 0;
@@ -45,5 +45,3 @@ export const Content = styled.div`
     margin: 0 16px;
   }
 `;
-
-export default Container;
